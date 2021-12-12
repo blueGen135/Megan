@@ -1,6 +1,9 @@
 <?php
 $api_key = '2478184ff586db088ec01e59fc6da91e';
-$_NGROK_URL = 'https://6778-2401-4900-5999-d7a2-edd6-3b5d-9f63-79b5.ngrok.io';
+
+
+
+$_NGROK_URL = 'https://ad9f-2401-4900-5c79-c603-60d4-3d0b-34c8-520e.ngrok.io';
 $shop = $_GET['shop'];
 $scopes = 'read_products,write_products,read_orders,write_orders,read_script_tags,write_script_tags';
 $resirect_uri = $_NGROK_URL. '/megan/generate_token.php';
