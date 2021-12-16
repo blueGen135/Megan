@@ -32,7 +32,19 @@ $shop_url = $parameters['shop'];
 
 ?>
 <?php include('header.php') ?>
+<?php
+  $query = array("query" => "{
+        shop{
+            id
+            name
+            email
+          }
+        }");
 
+        $grapql_test = $shopify->graphql($query);
+        $grapql_test = json_decode($grapql_test['body'], true);
+        print_r($grapql_test);
+?>
 
 <article>
   <div class="card">
@@ -41,6 +53,6 @@ $shop_url = $parameters['shop'];
 </article>
 
 
-<?php 
+<?php
 include('footer.php');
 ?>
